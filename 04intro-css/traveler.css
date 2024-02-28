@@ -97,12 +97,11 @@ main dl dd {
   }
   
   main a {
-    color: #ca6bcc;
+    color: #c066c2;
   }
   main a:hover {
     color: #77c276;
   }
-  
   
   /* Footer Stuff Here */
   footer {
