@@ -100,7 +100,7 @@ main dl dd {
     color: #EA9AEB;
   }
   main a:hover {
-    color: #EF80F5;
+    color: #77c276;
   }
   
   
@@ -115,5 +115,7 @@ main dl dd {
   footer a {
       color: #000000;
   }
-  
+   footer a:hover {
+    color: #EA9AEB;
+   }
   
