@@ -105,18 +105,18 @@ main dl dd {
     color: #EA9AEB;
   }
   
-  figure {
+  figure.one {
     width: 13%;
     margin: 0 1% 0 0;
     float: left;
 }
-figure img {
+figure.one img {
     width: 100%;
     height: auto;
 }
 figure.wrapped {
   width: 35%;
-  margin: 0 1% 0 0;
+  margin: 0 1% 0 1%;
   float: right;
 }
 figure.wrapped img {
@@ -125,8 +125,16 @@ figure.wrapped img {
 }
 figcaption {
   text-align: center;
+  font-size: .90rem;
 }
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+figure.allery {
+width: fit-content;
 
+}
   /* Footer Stuff Here */
   footer {
     background-color: #caf1a1;
