@@ -1,0 +1,90 @@
+<!doctype html>
+    <html lang="en">
+        <head> 
+            <title>Apply For StoryCon</title>
+            <link rel="stylesheet" href="traveler.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="UTF-8">
+            <meta name="description" content="Story Writting">
+            <meta name="author" content="Resh">
+            <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        </head>
+        <body>
+            <!-- Start of the Page Header -->
+            <header>
+                <img src="umages/logo.png" alt="site logo" width="65" height="63">
+            <div>
+                <h1>StoryCon</h1>
+                <p>Meet other Writers anbd make new friends!!!</p>
+            </div>
+            </header>
+            <!-- Start of the Page Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Gather.html">Gathering Ideas</a></li>
+                    <li><a href="plan.html">Planning Your Storymap</a></li>
+                    <li><a href="catgallery.html">Inspiring Cat Gallery</a></li>
+                    <li class="active"><a href="form.html">Apply For StoryCon</a></li>
+                </ul>
+            </nav>
+                    <!-- Start of the Page Content -->
+                <main>
+                    <h1>Apply For StoryCon</h1>
+                    <h3>Please enter your information to Join us at StoryCon!!!</h3>
+                    <form method="get" class="myForm" action="thx.html">
+                 
+                        <legend>Your Info</legend>
+                        <fieldset>
+                       <label>First Name*<input type="text" name="fname" required></label>
+                       <label>Last Name*<input type="text" name="lname" required></label>
+                       <label>Cell Phone Number*<input type="tel" name="phone" required placeholder="801-3276-2689"></label>
+                        </fieldset>
+                
+                        <fieldset>
+                        <legend>Pass Type</legend>
+                              <label><input type="radio" name="method" value="Day Pass">Day Pass: $34.94 USD</label>
+                              <label><input type="radio" name="method" value="Luxury Pass">Luxury Pass (with continental breakfast and spa): $52.93 USD</label>
+                              <label><input type="radio" name="method" value="V.I.P Pass">All Inclusive V.I.P Pass: $79.95 USD</label>
+                            </fieldset>
+                
+                            <fieldset>
+                            <legend>Room Type (Ammount Per Night)</legend>
+                                <label><input type="checkbox" name="Penthouse" value="chosen">Penthouse: $1000.00 USD</label>
+                                <label><input type="checkbox" name="Luxury Suite" value="chosen">Luxury Suite: $80.78 USD</label>
+                                <label><input type="checkbox" name="Modest Abode" value="chosen">Modest Abode: $40.65 USD</label>
+                                <label><input type="checkbox" name="Ordinary Suite" value="chosen">Ordinary Suite: $35.76 USD</label>
+                
+                                <label>
+                                <select name="Con Week">
+                                <option value="Weekday">Please Select How Many Nights</option>
+                                <option value="Weekday">1</option>
+                                <option value="Weekday">2</option>
+                                <option value="Weekday">3-4</option>
+                                <option value="Weekday">5-6</option>
+                                <option value="Week">Whole Week</option>
+                                </select>
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Pay</legend>
+                                <label>Credit/Debit Card*<input type="card" name="Credit/Debit Card" required placeholder="12345678890"></label>
+                                <label>Pin*<input type="pin" name="card pin" required placeholder="123"></label>
+                            </fieldset>
+                            <label>Please Report Any Allergies for our Staff
+                                <textarea name="Allergies"></textarea>
+                            </label>
+                
+                <input type="submit" value="Reserve Stay" class="sub">
+            </form>
+                </main>
+                    <!-- Start of the Page Footer -->
+                        <footer>
+                        <p>&copy; 2024 &bull; Reshiram (alias) &bull; <a href="mailto:reshy645@gmail.com">Email Us</a></p>
+                        </footer>
+                    </body>
+                </html>

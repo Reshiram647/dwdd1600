@@ -1,0 +1,275 @@
+*{box-sizing: border-box;}
+
+
+body {
+    font-family: "Josefin Slab", serif;
+   font-size: 16px;
+   font-weight: 700;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+}
+
+/* Header Stuff Here*/
+header{
+    background-color: #77c276;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: center;
+}
+
+    header div {
+      padding:1vw;
+    }
+header h1 {
+    margin: 0;
+    color: #000;
+}
+header p {
+  margin: 0;
+  color: #000000;
+  letter-spacing: .5px;
+}
+
+@media only screen and (max-width: 800px) {
+  nav ul {
+    margin: 0;
+    padding: 0 0;
+    list-style-type: none;
+}
+nav a {
+  background-color: #EA9AEB;
+    display: block;
+    padding: .6rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: solid 1px #34834f;
+    color: black;
+}
+nav .active a {
+    background-color: #ACE4F5;
+    background-image: linear-gradient(to bottom, #ACE4F5, #8fc2d2);
+    color: black;
+}
+nav a:hover {
+  color: #ACE4F5;
+}
+}
+
+@media only screen and (min-width: 801px) {
+  nav {
+    background-color: #EA9AEB;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    display: block;
+    padding: .85rem 2rem;
+}
+nav li.active a {
+  background-color: #ACE4F5;
+  color: #000;
+}
+nav a:hover {
+    color: #ACE4F5;
+  }
+}
+
+  /* stuff for the main */
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #000;
+}
+
+main h2 {
+  color: #2f3133;
+  margin-bottom: .2rem;
+}
+
+main p {
+  color: #2f3133;
+  margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #ACE4F5;
+}
+
+main dl dt {
+    color: #2f3133;
+    font-weight: 700;
+}
+main dl dd {
+    color: #0a5380;
+    font-size: .9rem;
+  }
+  
+  main ul {
+      list-style-type: circle;
+  }
+  main ul li {
+  line-height: 125%;
+  margin-bottom: .5rem;
+  font-size: .9rem;
+  }
+  
+  main address {
+      font-style: normal;
+      background-color: #A9F55A;
+      padding: .5rem;
+      width: 12.5rem;
+      border: 1px solid #A9F55A;
+      border-radius: .5rem;
+  }
+  
+  main a {
+    color: #34834f;
+  }
+  main a:hover {
+    color: #EA9AEB;
+  }
+  
+  figure.one {
+    width: 13%;
+    margin: 0 1% 0 0;
+    float: left;
+}
+figure.one img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped {
+  width: 35%;
+  margin: 0 1% 0 1%;
+  float: right;
+}
+figure.wrapped img {
+  width: 100%;
+  height: auto;
+}
+figcaption {
+  text-align: center;
+  font-size: .90rem;
+}
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+figure.allery {
+flex-basis: 20%;
+margin: 1rem 0;
+}
+div.gallery img {
+  width: 98%;
+  height: auto;
+  box-shadow: 0px 0px 10px black;
+}
+div.gallery img:hover {
+  box-shadow: 0px 0px 10px black;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.serioushero {
+  width: 100%;
+  margin: 0;
+}
+.serioushero img {
+  width: 100%;
+  height: auto;
+}
+
+.myForm legend {
+  color: #34834f;
+  font-size: .8rem;
+}
+.myForm label {
+  margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], [type=tel],  [type=card],  [type=pin], .myForm textarea {
+  display: block;
+}
+
+.myForm [type=text],  .myForm select, .myForm textarea {
+border: solid 1px #888;
+padding: .3rem;
+width: 250px;
+border-radius: .3rem;
+font-weight: 200;
+}
+
+.myForm textarea {
+  height: 5rem;
+  width: 15rem;
+}
+
+.myForm :required {
+  background-color: rgba(245, 107, 164, 0.1);
+}
+
+.myForm [type=submit] {
+  background-color: #EA9AEB;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  color: black;
+  margin: 1rem 0 0 1vw;
+  font-family: 'Josefin Slab';
+  font-weight: 900;
+  font-size: x-large;
+}
+
+ul.one li{
+  font-size: 22px;
+}
+main p.two {
+  font-size: 20px;
+}
+main h2.three {
+  margin-bottom: 2%;
+}
+  /* Footer Stuff Here */
+  footer {
+    background-color: #caf1a1;
+    text-align: center;
+    color: #000;
+    padding: 1rem 0;
+    font-size: 1em;
+  }
+  footer a {
+      color: #000000;
+  }
+   footer a:hover {
+    color: #EA9AEB;
+   }
+@media only screen and (min-width: 801px) {
+nav, main, header, footer{
+    min-width: 68em;
+    margin: 0 auto;
+}
+main.cats {
+  max-width: 68em;
+  margin: 0 auto;
+}
+}
+@media only screen and (max-width: 800px) {
+  nav, main, header, footer{
+    min-width: 27em;
+    margin: 0 auto;
+}
+main.cats {
+  max-width: 27em;
+  margin: 0 auto;
+}
+}
