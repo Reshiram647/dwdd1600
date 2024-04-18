@@ -9,7 +9,16 @@ body {
    display: flex;
    flex-direction: column;
 }
-
+nav {
+  background-color: #EA9AEB;
+}
+nav li.active a {
+  background-color: #ACE4F5;
+  color: #000;
+}
+nav a:hover {
+    color: #ACE4F5;
+  }
 /* Header Stuff Here*/
 header{
     background-color: #77c276;
@@ -29,59 +38,6 @@ header p {
   margin: 0;
   color: #000000;
   letter-spacing: .5px;
-}
-
-@media only screen and (max-width: 800px) {
-  nav ul {
-    margin: 0;
-    padding: 0 0;
-    list-style-type: none;
-}
-nav a {
-  background-color: #EA9AEB;
-    display: block;
-    padding: .6rem;
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    border-bottom: solid 1px #34834f;
-    color: black;
-}
-nav .active a {
-    background-color: #ACE4F5;
-    background-image: linear-gradient(to bottom, #ACE4F5, #8fc2d2);
-    color: black;
-}
-nav a:hover {
-  color: #ACE4F5;
-}
-}
-
-@media only screen and (min-width: 801px) {
-  nav {
-    background-color: #EA9AEB;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0 2vw;
-    margin: 0;
-    display: flex;
-}
-nav a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: #000000;
-    font-weight: 700;
-    display: block;
-    padding: .85rem 2rem;
-}
-nav li.active a {
-  background-color: #ACE4F5;
-  color: #000;
-}
-nav a:hover {
-    color: #ACE4F5;
-  }
 }
 
   /* stuff for the main */
@@ -118,6 +74,7 @@ main dl dd {
   
   main ul {
       list-style-type: circle;
+     
   }
   main ul li {
   line-height: 125%;
@@ -168,7 +125,7 @@ div.gallery {
   flex-wrap: wrap;
 }
 figure.allery {
-flex-basis: 20%;
+flex-wrap: wrap;
 margin: 1rem 0;
 }
 div.gallery img {
@@ -253,23 +210,70 @@ main h2.three {
    footer a:hover {
     color: #EA9AEB;
    }
-@media only screen and (min-width: 801px) {
-nav, main, header, footer{
-    min-width: 68em;
-    margin: 0 auto;
-}
-main.cats {
-  max-width: 68em;
-  margin: 0 auto;
-}
-}
+
 @media only screen and (max-width: 800px) {
-  nav, main, header, footer{
-    min-width: 27em;
-    margin: 0 auto;
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+nav a {
+  background-color: #EA9AEB;
+    display: block;
+    padding: .6rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: solid 1px #34834f;
+    color: black;
 }
-main.cats {
-  max-width: 27em;
+nav .active a {
+    background-color: #ACE4F5;
+    background-image: linear-gradient(to bottom, #ACE4F5, #8fc2d2);
+    color: black;
+}
+nav a:hover {
+  color: #ACE4F5;
+}
+main{
+  max-width: 62rem;
   margin: 0 auto;
+  flex-wrap: wrap;
+}
+}
+
+@media only screen and (min-width: 801px) {
+nav, header, footer, body{
+  width: 100%;
+
+}
+
+header, nav, main, footer {
+  max-width: 62rem;
+  margin: 0 auto;
+}
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    display: block;
+    padding: .85rem 2rem;
+}
+ .active a {
+    background-color: #ACE4F5;
+    background-image: linear-gradient(to bottom, #ACE4F5, #8fc2d2);
+    color: black;
+}
+nav a:hover {
+  color: #ACE4F5;
 }
 }
